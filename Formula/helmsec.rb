@@ -5,13 +5,13 @@
 class Helmsec < Formula
   desc "CLI tool to encrypt and decrypt secret files using SOPS"
   homepage "https://github.com/philipparndt/helmsec"
-  version "0.3.1"
+  version "0.3.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/philipparndt/helmsec/releases/download/v0.3.1/helmsec_darwin_x86_64.tar.gz"
-      sha256 "8d48e5d44e0e89dea7f2f30f5da94083dad1f4fe8b687354f5e8f96da46a6730"
+      url "https://github.com/philipparndt/helmsec/releases/download/v0.3.2/helmsec_darwin_x86_64.tar.gz"
+      sha256 "c0d0a091246b7a992c7865ca7659de39f40e1d63f5e0e6cb5af13a15634cebca"
 
       define_method(:install) do
         bin.install "helmsec"
@@ -39,8 +39,8 @@ class Helmsec < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/philipparndt/helmsec/releases/download/v0.3.1/helmsec_darwin_arm64.tar.gz"
-      sha256 "bd50d99e6af9904a8bdcd506395bdc099ebf6a49f5d26fb2d2c8ac7eca09b7a8"
+      url "https://github.com/philipparndt/helmsec/releases/download/v0.3.2/helmsec_darwin_arm64.tar.gz"
+      sha256 "13077ee3fafa6dea395922c8b65cac8944cacf2d4812f1ed1c015784ff7f094c"
 
       define_method(:install) do
         bin.install "helmsec"
@@ -71,8 +71,8 @@ class Helmsec < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philipparndt/helmsec/releases/download/v0.3.1/helmsec_linux_x86_64.tar.gz"
-      sha256 "ed42b5619ffacc2914c9fefc720e9d9df020cc4c0979d299c7bf4881c6023893"
+      url "https://github.com/philipparndt/helmsec/releases/download/v0.3.2/helmsec_linux_x86_64.tar.gz"
+      sha256 "06669bb529b549e2891432579f5d6295da6e33c7046a2397f155a78f0e104e84"
       define_method(:install) do
         bin.install "helmsec"
 
@@ -99,8 +99,8 @@ class Helmsec < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philipparndt/helmsec/releases/download/v0.3.1/helmsec_linux_arm64.tar.gz"
-      sha256 "43c7f3425e65d93d9e2fa96b27d14fddfb8f4601577404cf8015c7600b1e772c"
+      url "https://github.com/philipparndt/helmsec/releases/download/v0.3.2/helmsec_linux_arm64.tar.gz"
+      sha256 "01f094d94d1e566f85ff8234f1b12c783568002819ff9b680175f7d4bba9e55c"
       define_method(:install) do
         bin.install "helmsec"
 
